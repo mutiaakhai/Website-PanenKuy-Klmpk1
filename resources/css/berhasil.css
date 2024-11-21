@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #cafcd3, #c9f5d5);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container {
+    width: 450px;
+    padding: 20px;
+    background-color: #d1fadf;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logo-container {
+    text-align: right;
+    background-image: url('/public/assets/logo.png'); /* Tambahkan logo di sini */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 60px;
+    margin-left: auto;
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-image: url('/public/assets/profilerill.png'); /* Tambahkan gambar profil di sini */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #166534;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #16a34a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15803d;
+}

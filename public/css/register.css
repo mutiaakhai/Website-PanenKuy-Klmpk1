@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #a3e635, #86efac);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 255); /* Transparansi lebih tinggi */
+    width: 450px;
+    /* padding-top: 4rem;
+    padding-bottom: 4rem; */
+    padding-left: 4rem;
+    padding-right: 6rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.register-container img {
+    width: 30px; /* Perbesar gambar profil */
+    margin-bottom: 1rem;
+    background-color: rgba(22, 163, 74, 0.1); /* Background untuk lingkaran */
+    border-radius: 50%; /* Membuat lingkaran */
+    padding: 1rem; /* Ruang di sekitar gambar */
+}
+
+h2 {
+    color: #166534;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.form-group {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #166534;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #a3e635;
+    outline: none;
+    font-size: 1rem;
+    color: #166534;
+    background-color: rgba(163, 230, 53, 0.2); /* Warna background input */
+}
+
+.form-control:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 5px rgba(22, 163, 74, 0.5);
+}
+
+.btn-register {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #16a34a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #15803d;
+}
+
+.login-link {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #16a34a;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: #15803d;
+    text-decoration: underline;
+}

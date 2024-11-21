@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e7ffe6;
+}
+
+header {
+    background-color: #d8fea1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoLogin {
+    background-image: u;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E712A;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2E712A;
+    font-weight: bold;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 370px; 
+    background-image: url("/public/assets/PANENKUY.png");
+    background-position: center; 
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh area */
+    background-repeat: no-repeat;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #388e3c;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+
+/* .feature-card {
+    background-color: #f9fff6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    color: #388e3c;
+} */
+
+.feature-card {
+background-color: #f9fff6;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 200px;
+padding: 40px;
+text-align: center;
+position: relative;
+padding-top: 110px; /* Memberi ruang untuk gambar */
+min-height: 200px;
+}
+
+/* Background image untuk setiap feature card */
+.feature-card::before {
+content: "";
+width: 100px;
+height: 100px;
+position: absolute;
+top: 5px;
+left: 50%;
+transform: translateX(-50%);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+/* Setiap ikon */
+.feature-card.anti-ribet::before {
+background-image: url('/public/assets/to_do_list.png'); /* URL gambar "Anti-Ribet Icon" */
+}
+
+.feature-card.health::before {
+background-image: url('/public/assets/lettuce.png'); /* URL gambar "Health Icon" */
+}
+
+.feature-card.fresh::before {
+background-image: url('/public/assets/basket_of_vegetable.png'); /* URL gambar "Fresh Icon" */
+}
+
+.feature-card.delivery::before {
+background-image: url('/public/assets/scooter.png'); /* URL gambar "Delivery Icon" */
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    /* background-color: rgb(145, 241, 166); */
+    background-color: #d8fea1;
+    /* background-color: ; */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.about-content {
+    max-width: 60%;
+}
+
+.about-logo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url('public/assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about-section h2 {
+    color: #388e3c;
+}
+
+.footer {
+    background-color: #a8e063;
+    text-align: center;
+    padding: 10px;
+    color: #2E712A;
+}
+
+.search-bar {
+    padding: 4px;
+    border-radius: 10px;
+    border: 0.5px solid #000000;
+    width: 370px;
+}
+
+.login-box {
+    background-color: #4ec499; /* Warna hijau */
+    color: #ffffff;
+    background-image: url('/public/assets/account_circle.png');
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+.login-box img {
+    height: 100%; /* Pastikan gambar memenuhi tinggi header */
+    width: auto; /* Gambar tetap proporsional */
+    max-height: 40px; /* Sesuaikan dengan tinggi header atau padding */
+    max-width: 100%; /* Agar gambar tidak lebih lebar dari kontainer */
+}
+
+.login-box:hover{
+background-color: #1ec499;
+color: #000000;
+}
+
+/* Product Section */
+.product-section,
+.recommend-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.product-section h2,
+.recommend-section h2 {
+    font-size: 28px;
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+.products,
+.recommendations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product,
+.recommendation {
+    background-color: #f9fff6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover,
+.recommendation:hover {
+    transform: translateY(-10px);
+}
+
+.product img,
+.recommendation img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h4,
+.recommendation h4 {
+    font-size: 20px;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.product p,
+.recommendation p {
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products,
+    .recommendations {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Carousel Container */
+.products-carousel, .recommendations-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products, .recommendations {
+    display: flex;
+    transition: transform 0.4s ease;
+    gap: 20px;
+}
+
+.carousel-button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #2E712A;
+}
+
+
+
+/* .search-bar {
+padding: 8px;
+border-radius: 5px;
+border: 1px solid #cccccc;
+width: 200px;
+} */

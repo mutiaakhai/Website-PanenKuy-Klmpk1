@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to right, #ee4f27, #c97534); /* Warna gradient dari kiri ke kanan */
+    margin: 0;
+    height: 100vh; /* Mengatur tinggi body agar memenuhi seluruh layar */
+  }
+  
+
+h1{
+    color: aqua;
+}

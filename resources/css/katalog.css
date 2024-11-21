@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e7ffe6;
+}
+
+header {
+    background-color: #d8fea1;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.image-upload-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+
+.uploaded-image,
+.upload-box {
+    border: 2px dashed #388e3c;
+    background-color: #f0fbd8;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    color: #388e3c;
+    font-size: 14px;
+}
+
+.uploaded-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-section {
+    margin-top: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #388e3c;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: #e7ffe6;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+}
+
+.categories button {
+    background-color: #c3f7c5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #388e3c;
+}
+
+.categories button:hover {
+    background-color: #a8e063;
+    color: #ffffff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end; /* Mengarahkan tombol ke kanan */
+    gap: 10px; /* Menambahkan jarak antar tombol */
+}
+
+.form-actions button {
+    background-color: #388e3c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form-actions button:hover {
+    background-color: #2e712a;
+}

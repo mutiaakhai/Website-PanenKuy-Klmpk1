@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #a3e635, #86efac);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.login-container img {
+    width: 150px;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+}
+h2 {
+    color: #166534;
+    font-weight: 600;
+}
+.form-group {
+    margin-top: 1rem;
+    text-align: left;
+}
+.form-group label {
+    font-size: 0.9rem;
+    color: #166534;
+}
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #a3e635;
+    outline: none;
+    font-size: 1rem;
+    color: #166534;
+}
+.form-control:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 5px rgba(22, 163, 74, 0.5);
+}
+.forgot-password {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #16a34a;
+    text-decoration: none;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #166534;
+}
+.btn-signin {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #16a34a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-signin:hover {
+    background-color: #15803d;
+}
+.signup-link {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #16a34a;
+}
