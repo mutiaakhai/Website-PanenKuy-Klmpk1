@@ -11,8 +11,10 @@
 </head>
 <body>
     <header>
-        <div class="logo">Panen Kuy</div>
-        <a href="{{ route('lihatKatalog') }}" style="padding: 10px 20px; background-color: blue; color: white; text-decoration: none; border-radius: 5px;">buat add</a>
+        <a href ="/home" class="logo">Panen Kuy</a>
+        <br>
+        <a href="{{ route('lihatKatalog') }}" style="display: inline-block; padding: 10px; background-color: green; color: white; text-decoration: none; border-radius: 50%; font-size: 40px; text-align: center; width: 50px; height: 50px; line-height: 30px;">+</a>
+
         
     </header>
     <main>

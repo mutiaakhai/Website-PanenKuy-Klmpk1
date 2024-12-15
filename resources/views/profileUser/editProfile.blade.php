@@ -3,114 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PanenKuy Register</title>
+    <title>Edit Profile PanenKuy</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    @vite('resources/css/register.css')
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .navbar {
+    position: fixed; /* Tetap di atas meskipun halaman digulir */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh */
+    background-color: #D8FEA1; /* Warna hitam */
+    padding: 17px 20px;
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.navbar-logo img {
+    height: 50px; /* Atur tinggi logo */
+    width: auto; /* Pertahankan rasio logo */
+    margin-left:88%;
+}
+
+</style>
 
 </head>
-<body>
-    
-<form action="{{ route('create', $user->id) }}" method="POST">
-    @csrf
-    <div class="grid gap-6 mb-6 md:grid-cols-2">
-        <div>
-            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-            <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Please enter your name" required />
-        </div>  
-        <div>
-            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-            <input type="number" id="phone" name="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123456789101112"  required />
-            {{-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" --}}
+<nav class="navbar">
+        <div class="navbar-logo">
+            <img src="/assets/logo.png">
         </div>
-        <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-            <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="laureen@meta.com" required />
-        </div>
-        <div class="mb-6">
-            <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
-            <input type="text" id="address" name="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Jalan Kenangan" required />
-        </div>
-    </div>
-    <div class="mb-6">
-        <label for="bio" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bio</label>
-        <input type="text" id="bio" name="bio" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter ur bio here" required />
-    </div> 
-    <div class="mb-6">
-        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-        <input type="password" id="password" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-    </div>  
-    <div class="flex items-start mb-6">
-        <div class="flex items-center h-5">
-        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-        </div>
-        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-    </div>
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
+    </nav>
+<body class="bg-green-100 font-poppins">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-green-200 shadow-lg rounded-lg p-8 w-full max-w-2xl mt-[8%]">
+            <h1 class="text-2xl font-semibold text-green-900 mb-6">Edit Profile PanenKuy</h1>
+            <form action="{{ route('create', $user->id) }}" method="POST" class="space-y-6">
+                @csrf
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-green-900">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="Masukkan nama Anda" required>
+                    </div>
 
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-green-900">Nomor Telepon</label>
+                        <input type="number" id="phone" name="phone" class="mt-1 block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="123456789101112" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-green-900">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="laureen@meta.com" required>
+                </div>
+
+                <div>
+                    <label for="address" class="block text-sm font-medium text-green-900">Alamat</label>
+                    <input type="text" id="address" name="address" class="mt-1 block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="Jalan Kenangan" required>
+                </div>
+
+                <div>
+                    <label for="bio" class="block text-sm font-medium text-green-900">Bio</label>
+                    <input type="text" id="bio" name="bio" class="mt-1 block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="Masukkan bio Anda" required>
+                </div>
+
+                <div class="relative">
+                    <label for="password" class="block text-sm font-medium text-green-900">Kata Sandi</label>
+                    <div class="mt-1 flex items-center">
+                        <input type="password" id="password" name="password" class="block w-full border-green-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" placeholder="•••••••••" required>
+                        <button type="button" onclick="togglePassword()" class="ml-2 text-green-600 hover:text-green-800">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="remember" type="checkbox" class="h-4 w-4 text-green-600 border-green-300 rounded focus:ring-green-500" required>
+                    <label for="remember" class="ml-2 block text-sm text-green-900">Saya setuju dengan <a href="#" class="text-green-700 hover:underline">syarat dan ketentuan</a>.</label>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full py-2 px-4 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
 </body>
 </html>
-
-
-    <!-- <div class="register-container">
-        <img src="path/to/avatar-icon.png" alt="User Icon">
-        <h2>Register to PanenKuy</h2>
-
-        <form action="/register" method="POST">
-            <div class="form-group">
-                <label for="name">Nama Lengkap</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Nama Lengkap" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Nomor Telepon</label>
-                <input type="text" id="phone" name="phone" class="form-control" placeholder="Nomor Telepon" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Alamat</label>
-                <input type="text" id="address" name="address" class="form-control" placeholder="Alamat" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Kata Sandi</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Kata Sandi" required>
-            </div>
-
-            <button type="submit" class="btn-register">Register</button>
-        </form>
-
-        <a href="/login" class="login-link">Sudah terdaftar? Masuk</a>
-    </div> -->
-    {{-- <form action="/user/update/{{ auth()->user()->id }}" method="POST">
-        @csrf
-        @method('PUT')
-    <div class="register-container">
-    <!-- <img src="/public/assets/" alt="User Icon"> Icon at the top -->
-    <h2>Ini form edit</h2>
-    <div class="form-group">
-        <label for="name">Nama Lengkap</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Nama Lengkap" value="{{ auth()->user()->name }}" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="{{ auth()->user()->email }}" required>
-    </div>
-    <div class="form-group">
-        <label for="phone">Nomor Telepon</label>
-        <input type="integer" class="form-control" id="phone" placeholder="Nomor Telepon">
-    </div>
-    <div class="form-group">
-        <label for="address">Alamat</label>
-        <input type="text" class="form-control" id="address" placeholder="Alamat">
-    </div>
-    <div class="form-group">
-        <label for="password">Kata Sandi</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Kata Sandi" >
-    </div>
-    <button class="btn-register" type="submit">Edit</button>
-</div>
-
-    </form> --}}

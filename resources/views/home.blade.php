@@ -11,17 +11,22 @@
 
     <!-- Header Section -->
     <header>
-    <div class="logo">Panen Kuy</div>
+    <div class="logo">PanenKuy</div>
     <input type="text" placeholder="Search" class="search-bar">
     <ul class="navbar">
         <li><a href="/home">Home</a></li>
         <li><a href="{{ route('katalog') }}">Catalog</a></li>
         <li><a href="/kategori">Category</a></li>
         <li><a href="/help">Help</a></li>
+        <li><a href="/userpro">👤</a></li>
+        <!-- <div class="d-flex align-items-center"> -->
+        <!-- <div class="icon">👤</div> -->
+            </a>
+        </div>
         {{-- dibawah nanti --}}
-        <li><a href="/profile/{id}" class="dropbtn">Hi welcome back, {{ auth()->user()->name }}</a></li>
+        <!-- <li><a href="/profile/{id}" class="dropbtn">Hi welcome back, {{ auth()->user()->name }}</a></li> -->
         
-        <li><a href="/Login" class="login-box" >Logout</a></li>
+       
 
     </ul>
 </header>
@@ -78,42 +83,34 @@
         <button class="carousel-button prev" onclick="scrollCarousel('products', -1)">&#10094;</button>
         <div class="products">
             <div class="product">
-                <img src="path/to/rice.jpg" alt="Beras Premium">
                 <h4>Beras Premium - 20 kg</h4>
                 <p>Rp. 52.000</p>
             </div>
             <div class="product">
-                <img src="path/to/lettuce.jpg" alt="Selada Keriting">
                 <h4>Selada Keriting - 500 gr</h4>
                 <p>Rp. 16.000</p>
             </div>
             <div class="product">
-                <img src="path/to/tomato.jpg" alt="Tomat Merah Fresh">
                 <h4>Tomat Merah Fresh</h4>
                 <p>Rp. 20.000</p>
             </div>
             <div class="product">
-                <img src="path/to/cabbage.jpg" alt="Sawi Hijau Segar">
                 <h4>Sawi Hijau Segar</h4>
                 <p>Rp. 17.000</p>
             </div>
             <div class="product">
-                <img src="path/to/carrot.jpg" alt="Wortel Hijau Segar">
                 <h4>Wortel Segar</h4>
                 <p>Rp. 10.000</p>
             </div>
             <div class="product">
-                <img src="path/to/chilli.jpg" alt="Cabai Segar">
                 <h4>Cabai Segar</h4>
                 <p>Rp. 5.000</p>
             </div>
             <div class="product">
-                <img src="path/to/onion.jpg" alt="Bawang Segar">
                 <h4>Bawang Segar</h4>
                 <p>Rp. 8.000</p>
             </div>
             <div class="product">
-                <img src="path/to/Spinach.jpg" alt="Bayam Segar">
                 <h4>Bayam Segar</h4>
                 <p>Rp. 7.000</p>
             </div>
@@ -130,42 +127,34 @@
         <button class="carousel-button prev" onclick="scrollCarousel('recommendations', -1)">&#10094;</button>
         <div class="recommendations">
             <div class="recommendation">
-                <img src="path/to/rice.jpg" alt="Beras Premium">
                 <h4>Beras Premium - 20 kg</h4>
                 <p>Rp. 52.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/lettuce.jpg" alt="Selada Keriting">
                 <h4>Selada Keriting - 500 gr</h4>
                 <p>Rp. 16.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/tomato.jpg" alt="Tomat Merah Fresh">
                 <h4>Tomat Merah Fresh</h4>
                 <p>Rp. 20.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/cabbage.jpg" alt="Sawi Hijau Segar">
                 <h4>Sawi Hijau Segar</h4>
                 <p>Rp. 17.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/carrot.jpg" alt="Wortel Hijau Segar">
                 <h4>Wortel Segar</h4>
                 <p>Rp. 10.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/chilli.jpg" alt="Cabai Segar">
                 <h4>Cabai Segar</h4>
                 <p>Rp. 5.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/onion.jpg" alt="Bawang Segar">
                 <h4>Bawang Segar</h4>
                 <p>Rp. 8.000</p>
             </div>
             <div class="recommendation">
-                <img src="path/to/Spinach.jpg" alt="Bayam Segar">
                 <h4>Bayam Segar</h4>
                 <p>Rp. 7.000</p>
             </div>
@@ -180,6 +169,6 @@
 &copy; 2024 PanenKuy. All rights reserved.
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

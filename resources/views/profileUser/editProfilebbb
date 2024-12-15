@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanenKuy Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css"> <!-- Linking CSS -->
+    @vite('resources/css/editprofile.css')
+</head>
+<body>
+<nav class="navbar">
+        <div class="navbar-logo">
+            <img src="/assets/logo.png">
+        </div>
+    </nav>
+    <form action="{{ route('create', $user->id) }}" method="POST">
+        @csrf
+        <div class="grid-container">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your name" required />
+            </div> 
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <input type="text" id="bio" name="bio" placeholder="Enter your bio here" required />
+            </div> 
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="laureen@meta.com" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Jalan Kenangan" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="number" id="phone" name="phone" placeholder="123456789101112" required />
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="•••••••••" required />
+            </div> -->
+        </div>
+        <div class="checkbox-group">
+            <input id="remember" type="checkbox" value="" required />
+            <label for="remember">
+                I agree with the <a href="#">terms and conditions</a>.
+            </label>
+        </div>
+        <a href = "/profile/{id}">
+        <button type="submit">SAVE</button>
+</a>
+    </form>
+</body>
+</html>
+
+
+
+    <!-- <div class="register-container">
+        <img src="path/to/avatar-icon.png" alt="User Icon">
+        <h2>Register to PanenKuy</h2>
+
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="Nomor Telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Kata Sandi" required>
+            </div>
+
+            <button type="submit" class="btn-register">Register</button>
+        </form>
+
+        <a href="/login" class="login-link">Sudah terdaftar? Masuk</a>
+    </div> -->
+    {{-- <form action="/user/update/{{ auth()->user()->id }}" method="POST">
+        @csrf
+        @method('PUT')
+    <div class="register-container">
+    <!-- <img src="/public/assets/" alt="User Icon"> Icon at the top -->
+    <h2>Ini form edit</h2>
+    <div class="form-group">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Nama Lengkap" value="{{ auth()->user()->name }}" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="{{ auth()->user()->email }}" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Nomor Telepon</label>
+        <input type="integer" class="form-control" id="phone" placeholder="Nomor Telepon">
+    </div>
+    <div class="form-group">
+        <label for="address">Alamat</label>
+        <input type="text" class="form-control" id="address" placeholder="Alamat">
+    </div>
+    <div class="form-group">
+        <label for="password">Kata Sandi</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Kata Sandi" >
+    </div>
+    <button class="btn-register" type="submit">Edit</button>
+</div>
+
+    </form> --}}

@@ -20,7 +20,7 @@
         <div class="container">
             <form action="{{ route('updateProdukPost', $product->id) }}" method="post">
                 @csrf
-            <div class="image-upload-section">
+            <!-- <div class="image-upload-section">
                 <div class="uploaded-image">
                     <img src="https://via.placeholder.com/150" alt="Freshbox.id">
                 </div>
@@ -28,7 +28,7 @@
                     <p>+</p>
                     <p>Tambahkan Foto Produk</p>
                 </div>
-            </div>
+            </div> -->
             @if (session()->has('updateFailed'))
         <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
           <span class="font-medium">{{ session('updateFailed') }}</span> Anda tidak berhak update item tersebut bos!
@@ -54,7 +54,6 @@
                     </div>
                     <div class="form-actions">
                         <button type="submit">Simpan</button>
-                        <a href="{{ route('katalog') }}" style="padding: 10px 20px; background-color: blue; color: white; text-decoration: none; border-radius: 5px;">you punya daftar</a>
                     </div>
                 
             </div>

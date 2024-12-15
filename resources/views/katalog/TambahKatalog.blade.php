@@ -16,7 +16,7 @@
         <div class="container">
             <form action="{{ route('tambahProduk') }}" method="post">
                 @csrf
-            <div class="image-upload-section">
+            <!-- <div class="image-upload-section">
                 <div class="uploaded-image">
                     <img src="https://via.placeholder.com/150" alt="Freshbox.id">
                 </div>
@@ -24,10 +24,9 @@
                     <p>+</p>
                     <p>Tambahkan Foto Produk</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="form-section">
-                
                     <div class="form-group">
                         <label for="nama-produk">Nama Produk *</label>
                         <input type="text" id="namaProduk" name="namaProduk" placeholder="Value">

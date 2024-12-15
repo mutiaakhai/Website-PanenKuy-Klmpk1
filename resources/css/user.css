@@ -1,0 +1,95 @@
+/* Reset dan styling dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e7ffe7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed; /* Tetap di atas meskipun halaman digulir */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh */
+    background-color: #D8FEA1; /* Warna hitam */
+    padding: 17px 20px;
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.navbar-logo img {
+    height: 50px; /* Atur tinggi logo */
+    width: auto; /* Pertahankan rasio logo */
+    margin-left:88%;
+}
+
+/* Logo di pojok kanan atas */
+.logo {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #336600;
+    display: flex;
+}
+
+
+/* .logo img {
+    width: 150px;
+    vertical-align: middle;
+    margin-right: 5px;
+} */
+
+/* Container utama */
+.container {
+    text-align: center;
+    background-color: #d6f5d6;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon lingkaran di atas */
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #77c377;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* Judul utama */
+h1 {
+    font-size: 24px;
+    color: #336600;
+    margin-bottom: 30px;
+}
+
+/* Tombol */
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #336600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #285c00;
+}

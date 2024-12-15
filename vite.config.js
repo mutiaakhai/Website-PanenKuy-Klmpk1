@@ -13,7 +13,12 @@ export default defineConfig({
                 'resources/css/register.css',
                 'resources/css/setting.css',
                 'resources/css/berhasil.css',
-                'resources/css/katalog.css'
+                'resources/css/katalog.css',
+                'resources/css/kategori.css',
+                'resources/css/user.css',
+                'resources/css/help.css',
+                'resources/css/editprofile.css',
+                'resources/css/viewprofile.css'
 
                 
             ],

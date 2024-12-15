@@ -67,33 +67,6 @@ class ProfileController1 extends Controller
         return redirect('/');
     }
 
-
-    // public function addVehicle(Request $request){
-    //     $request->validate([
-    //         'manufacturer' => 'required|string',
-    //         'type' => 'required|string',
-    //         'category' => 'required|string',
-    //         'cc' => 'required|integer',
-    //         'year' => 'required|integer'
-    //     ]);
-    //     $request_ = Auth::user();
-    //     try {
-    //         $new_vehicle = new Vehicle;
-    //         $new_vehicle->manufacturer = $request->manufacturer;
-    //         $new_vehicle->vehicle_type = $request->type;
-    //         $new_vehicle->vehicle_category = $request->category;
-    //         $new_vehicle->engine_capacity = $request->cc;
-    //         $new_vehicle->vehicle_year = $request->year;
-    //         $new_vehicle->user_id = $request_->id;
-    //         $new_vehicle->save();
-
-    //     return redirect('/ve')->with('success','Vehicle added successfully');
-    //     } catch (\Exception $e) {
-    //         \Illuminate\Support\Facades\Log::error("Vehicle add error: ".$e->getMessage());
-    //         return back()->withErrors(['error' => 'Failed to add vehicle.']);
-    //     }  
-    // }
-
     /**
      * Display the user's profile form.
      */

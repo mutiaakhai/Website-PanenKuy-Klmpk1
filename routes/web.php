@@ -60,6 +60,18 @@ Route::get ('/setting', function () {
     return view('setting');
 });
 
+Route::get ('/kategori', function () {
+    return view('kategori');
+});
+
+Route::get ('/userpro', function () {
+    return view('user');
+});
+
+Route::get ('/help', function () {
+    return view('help');
+});
+
 // Route::get ('/katalog/tambah', function () {
 //     return view('katalog.TambahKatalog');
 // });

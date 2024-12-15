@@ -10,63 +10,6 @@ use Illuminate\Support\Facades\Log;
 
 class ProfileControllerProfile extends Controller
 {
-    //create profile
-    // public function createProfile(Request $request, $id){
-    //     // $profile = Profile::where('id', $id)->where('user_id', $request->id)->first();
-    //     $request->validate([
-    //         'name' => 'required|string',
-    //         'phone' => 'required|numeric',
-    //         'email' => 'required|email|unique:users,email,' . $id,
-    //         'password' => 'required',
-    //     ]);    
-    //         try {
-    //             $new_profile = new Profile();
-    //             $new_profile->address = $request->address;
-    //             $new_profile->phone = $request->phone;
-    //             $new_profile->bio = $request->bio;
-    //             $new_profile->user_id = $id;
-               
-
-    //             $new_profile->save();
-    //         return redirect('/profile');
-    //         } catch (\Exception $e) {
-    //             Log::error('Error storing profile: ' . $e->getMessage(), [
-    //                 'request' => $request->all(),
-    //             ]);
-    //         }
-    //     // }
-    //     // else{
-    //         dd($request->user_id);
-    //     // }
-        
-    // }
-    
-//     public function createProfile(Request $request, $id)
-// {
-//     $request->validate([
-//         'name' => 'required|string',
-//         'phone' => 'required|numeric',
-//         'email' => 'required|email|unique:users,email,' . $id,
-//         'password' => 'required',
-//     ]);
-
-//     try {
-//         $new_profile = new Profile();
-//         $new_profile->address = $request->address;
-//         $new_profile->phone = $request->phone;
-//         $new_profile->bio = $request->bio;
-//         $new_profile->user_id = $id;
-
-//         $new_profile->save();
-
-//         return redirect()->route('profile', ['id' => $id])->with('success', 'Profile created successfully!');
-//     } catch (\Exception $e) {
-//         Log::error('Error storing profile: ' . $e->getMessage(), [
-//             'request' => $request->all(),
-//         ]);
-//         return redirect()->back()->withErrors(['msg' => 'Failed to create profile.']);
-//     }
-// }
 
 public function createProfile(Request $request, $id)
 {
@@ -116,11 +59,6 @@ public function createProfile(Request $request, $id)
 }
 
 
-
-    // edit profile
-    // public function editProfile(){
-    //     return view('profileUser.editProfile');
-    // }
     public function edit($id)
 {
     $user = User::findOrFail($id); // Retrieve the user by ID
